@@ -25,6 +25,7 @@ db.sequelize = sequelize;
 
 db.tasks = require("./taskModel.js")(sequelize, DataTypes);
 
+//added force false to not dropped table and recreated after each load of the api app
 db.sequelize.sync({ force: false }).then(() => {
   console.log("Re-sync done");
 });

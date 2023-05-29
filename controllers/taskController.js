@@ -41,6 +41,7 @@ const updateTask = async (req, res) => {
     plain: true,
   });
 
+  //use updatedTask and another call API because return object is not supported by MySQL (only Postgre)
   const updatedTask = await Task.findByPk(id);
 
   res.status(200).send(updatedTask);

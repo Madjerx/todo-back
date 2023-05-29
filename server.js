@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require("cors");
+const cors = require("cors"); // to enable CORS for HTTP requests from my react app
 const app = express();
 
 var corOptions = {
@@ -8,7 +8,7 @@ var corOptions = {
 
 // //MiddleWare
 
-app.use(cors(corOptions));
+app.use(cors(corOptions)); // enable for all route
 
 app.use(express.json());
 

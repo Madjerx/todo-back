@@ -6,3 +6,5 @@ module.exports = {
     dialect: 'mysql',
 
 }
+
+// DB configuration data
