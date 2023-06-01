@@ -3,7 +3,7 @@ const cors = require("cors"); // to enable CORS for HTTP requests from my react 
 const app = express();
 
 var corOptions = {
-  origin: "https://localhost:8081",
+  origin: "http://localhost:3002",
 };
 
 // //MiddleWare
